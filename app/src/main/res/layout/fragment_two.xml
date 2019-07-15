@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="P2 Server[ms]: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.example.android.tablayout.HorizontalNumberPicker
+            android:id="@+id/p2server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="P2*Server[ms]: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.example.android.tablayout.HorizontalNumberPicker
+            android:id="@+id/p2server_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="复位时间 [ms]: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.example.android.tablayout.HorizontalNumberPicker
+            android:id="@+id/fuweishijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="自动开始 "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/zidongme"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.example.android.tablayout.HorizontalNumberPicker
+            android:id="@+id/zidongkaishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="保存数据 "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/baocunme"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="20dp"
+            android:text="覆盖保存 "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/fugaime"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/anquanchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全访问"
+            android:layout_marginLeft="50dp"
+            android:onClick="tab2click"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/anquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷写流程 "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="55dp"/>
+
+        <Spinner
+            android:id="@+id/shuaxieliucheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+
+</LinearLayout>
